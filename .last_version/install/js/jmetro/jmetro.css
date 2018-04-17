@@ -1,0 +1,336 @@
+
+@import "fonts/PT/ptsans.css";
+
+/* specified styles for cites */
+/* MOSCOW (msk) */
+.jmetro .msk.jm_station.selected>.jm_station__label{
+	background-image: url('img/msk/check.svg');
+
+}
+
+.jmetro .jm_station>.jm_station__label {
+
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: -20px;
+	top: -5px;
+	background-size: cover;
+}
+
+
+.jmetro .msk.jm_station {
+	background: none;
+}
+
+
+.jmetro .msk.jm_station:hover .jm_station__name,
+.jmetro .msk.jm_station:hover .jm_clone,
+.jmetro.active .msk.jm_station:hover .jm_station__name,
+.jmetro.active .msk.jm_station:hover .jm_clone,
+.jmetro.active .msk.jm_station.selected .jm_station__name,
+.jmetro.active .msk.jm_station.selected .jm_clone,
+.jmetro.active .msk.jm_station.searchable .jm_station__name,
+.jmetro.active .msk.jm_station.searchable .jm_clone{
+	font-weight: normal;
+}
+
+.jmetro.active.no-blur .msk.jm_station.selected .jm_station__name,
+.jmetro.active.no-blur .msk.jm_station.selected .jm_clone {
+	font-weight: bold;
+}
+
+
+
+/* Saint Petersburg (spb) */
+
+.jmetro .jm_station.spb>.jm_station__name {
+	/*font-weight: bold;*/
+	font-size: 18px;
+}
+
+.jmetro .jm_station.spb > .jm_station__label {
+
+	width: 16px;
+	height: 16px;
+	left: -16px;
+	top: 0px;
+	display: block;
+	position: absolute;
+}
+
+.jmetro .class_sankt-peterburg.jm_station.selected>div{
+
+	background: url('img/spb/check.png');
+}
+
+.jmetro .class_sankt-peterburg.jm_station.selected>p{
+text-decoration: underline;
+}
+
+
+.jmetro .class_sankt-peterburg.jm_station {
+	 text-transform: uppercase;
+	 font-weight: bold;
+	/* font-size ? */
+	background: none;
+	line-height: 0.9;
+}
+
+.jmetro .jm_station.jm_blue {
+	color: blue;
+}
+
+.jmetro .jm_station.jm_red {
+	color: red;
+}
+
+.jmetro .jm_station.jm_green {
+	color: green;
+}
+
+.jmetro .jm_station.jm_orange {
+	color: #FF7000;
+}
+
+.jmetro .jm_station.jm_purple {
+	color: purple;
+}
+
+
+.jmetro {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.jmetro .jm_search {
+	margin-bottom: 10px;
+}
+
+
+.jmetro .jm_clear,
+.jmetro .jm_submit__button
+{
+	float:right;
+	text-decoration:none;
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+	padding: 4px 6px;
+	margin: 3px 0 3px 5px;
+	position: relative;
+	line-height: 13px;
+	color: #333;
+	cursor: pointer;
+	border: 1px solid #aaaaaa;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+	background-clip: padding-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #e4e4e4;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+	background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+}
+
+
+
+.jmetro .jm_clear:hover
+{
+	text-decoration: none !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e7e7e7', GradientType=0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #e7e7e7), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+	background-image: -webkit-linear-gradient(top, #e7e7e7 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	background-image: -moz-linear-gradient(top, #e7e7e7 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+	background-image: linear-gradient(to bottom, #e7e7e7 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+}
+
+.jmetro .jm_submit__button {
+	margin-left: 0;
+	float: left;
+	color: white;
+	border: 1px solid #444;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px #aeaeae inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 2px #aeaeae inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+	background-clip: padding-box;
+	background-color: #4A4A4A;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67727A', endColorstr='#646f77', GradientType=0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #646f77), color-stop(50%, #667076), color-stop(52%, #51595e), color-stop(100%, #67727A));
+	background-image: -webkit-linear-gradient(top, #646f77 20%, #667076 50%, #51595e 52%, #67727A 100%);
+	background-image: -moz-linear-gradient(top, #646f77 20%, #667076 50%, #51595e 52%, #67727A 100%);
+	background-image: linear-gradient(to bottom, #646f77 20%, #667076 50%, #51595e 52%, #67727A 100%);
+}
+
+.jmetro .jm_submit__button:hover {
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67727A', endColorstr='#464f55', GradientType=0);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #4b5257 ), color-stop(50%, #535b5f ), color-stop(52%, #34393c ), color-stop(100%, #464f55));
+	background-image: -webkit-linear-gradient(top, #4b5257  20%, #535b5f  50%, #34393c  52%, #464f55 100%);
+	background-image: -moz-linear-gradient(top, #4b5257  20%, #535b5f  50%, #34393c  52%, #464f55 100%);
+	background-image: linear-gradient(to bottom, #4b5257   20%, #535b5f  50%, #34393c  52%, #464f55 100%);
+
+}
+
+
+.jmetro .jm_clear:active,
+.jmetro .jm_submit__button:active
+{
+	background-image: none;
+}
+
+
+
+.jmetro.active:not(.no-blur)>.jm_img_block>.jm_img {
+	opacity: 0.4;
+}
+
+.jmetro.ie-fix>.jm_img_block>.jm_img {
+	height: 100%!important;
+}
+
+
+.jmetro.editable .jm_station:hover,
+.jmetro .jm_station.selected:hover,
+.jmetro.active.editable .jm_station:hover {
+		cursor: pointer;
+		opacity:1;
+	}
+
+.jmetro.editable .jm_station:hover .jm_station__name,
+.jmetro.editable .jm_station:hover .jm_clone,
+.jmetro.active.editable .jm_station:hover .jm_station__name {
+	color:red;
+	font-weight: bold;
+
+}
+
+	
+	
+.jmetro .jm_img_block {
+	position: relative;
+	display: inline-block;
+}
+	
+	
+.jmetro .jm_station {
+	position: absolute;
+	background: rgba(255,255,255,0.7);
+}
+
+.jmetro .jm_station .jm_station__name,
+.jmetro .jm_station .jm_clone
+{
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	font-family: 'PTSansNarrowRegular';
+	line-height: 0.9;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.jmetro .jm_station.disabled .jm_station__name,
+.jmetro .jm_station.disabled:hover .jm_station__name,
+.jmetro .jm_station.disabled  .jm_clone,
+.jmetro .jm_station.disabled:hover  .jm_clone {
+	cursor: default;
+	color: black;
+	opacity: 0.4;
+	font-weight: normal;
+}
+
+.jmetro .jm_clone {
+	position: absolute;
+}
+
+.jmetro.active:not(.no-blur) .jm_station {
+	opacity: 0.4;
+}
+
+.jmetro.active .jm_station.selected ,
+.jmetro.active .jm_station.searchable {
+
+	opacity: 1;
+}
+
+.jmetro.active .jm_station.selected .jm_station__name,
+.jmetro.active .jm_station.searchable .jm_station__name {
+	font-weight: bold;
+}
+
+.jmetro .jm_station .jm_info {
+	display: none;
+}
+
+.jmetro.show-info .jm_station .jm_info,
+.jmetro .jm_station:hover .jm_info
+/*, .jmetro .jm_station.selected .jm_info*/ {
+	display: block;
+}
+
+
+.jmetro .jm_info,
+.jmetro .jm_info__triangle-inner {
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.jmetro .jm_info {
+	border-radius: 5px;
+	z-index: 10;
+	box-sizing: border-box;
+	width: 270px;
+	margin-left: -135px;
+	padding: 10px;
+	margin-top: 18px;
+	left: 50%;
+}
+
+
+
+.jmetro .jm_info__triangle {
+	width: 40px;
+	height: 34px;
+	overflow: hidden;
+	position: absolute;
+	margin-left: -20px;
+	top: -34px;
+	left: 50%;
+}
+
+.jmetro .jm_info__triangle-inner {
+	display: block;
+	content: '';
+	width: 24px;
+	height: 24px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	left: 50%;
+	margin-left: -12px;
+	top: 24px
+}
+
+.jmetro .jm_frame {
+	position: absolute;
+	background: blue;
+	opacity: 0.3;
+	border: 1px dotted red;
+	/*z-index: 100;*/
+}
+
+.jmetro .jm_metro_selected>div.visiable {
+	display: inline-block;
+}

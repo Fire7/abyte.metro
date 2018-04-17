@@ -1,0 +1,65 @@
+/* SEARCH  BLOCK */
+ 
+.mediagallery_search {   
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+  
+} 
+
+.mediagallery_search .mediagallery_search_value-holder{
+    margin-right: 280px;
+}
+
+.mediagallery_search.mediagallery_search--not-authorized .mediagallery_search_value-holder  {
+    margin-right: 130px;
+}
+
+
+.mediagallery_search .mediagallery_search_value-holder input {
+    width: 100%;
+}
+
+.mediagallery_search .ab_mg_btn {
+    float:right; 
+    margin-left: 10px;
+}
+
+/*
+ *  EDIT ALBUM DIALOG
+ */
+
+#mediagallery_album_edit label {
+    margin-right: 20px;
+}
+
+#mediagallery_album_edit .submit {
+    float: right;
+}
+
+/* INDEX */
+
+.mediagallery_index .mediagallery_elements_block {
+    margin-right: 250px;
+}
+
+.mediagallery_index .mediagallery_user-list {
+    width: 230px;
+    float: right;
+    margin-top: 20px;
+}
+
+.mediagallery_index .mediagallery_user-list h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #585858;
+}
+
+
+
+.mediagallery_index .mediagallery_user-list .list a {
+    display: block;
+    text-align: left;
+    color: #6194BD;
+}
+
